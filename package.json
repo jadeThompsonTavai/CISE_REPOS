@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "npm test --prefix cise_ass1a_worksheet2-frontend/src/App.test.tsx"
   },
   "author": "Jade Thompson-Tavai",
   "license": "ISC"
