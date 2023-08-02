@@ -6,6 +6,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jade Thompson-Tavai",
-  "license": "ISC"
+  "author": "Jade Thompson-Tavai"
 }
