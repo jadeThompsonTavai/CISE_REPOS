@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
+  "proxy": "http://localhost:8082",
+  "scripts": {
     "start": "node app.js",
     "app": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,9 +20,13 @@
   },
   "homepage": "https://github.com/jadeThompsonTavai/CISE_REPOS#readme",
   "dependencies": {
+    "@koa/router": "^12.0.0",
     "body-parser": "^1.20.2",
     "config": "^3.3.9",
     "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1",
+    "koa": "^2.14.2",
+    "mongodb": "^5.7.0",
     "mongoose": "^7.4.1"
   },
   "devDependencies": {
