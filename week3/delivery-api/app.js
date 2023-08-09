@@ -26,7 +26,7 @@ const deliveries = [
    },
 ];
 
-router.get("{{API_BASE_URL}}/deliveries?page=1&count=20", (ctx) => {
+router.get("/deliveries", (ctx) => {
    ctx.body = {
       status: "00",
       message: "successs",
@@ -34,7 +34,7 @@ router.get("{{API_BASE_URL}}/deliveries?page=1&count=20", (ctx) => {
    };
 });
 
-router.get("{{API_BASE_URL}}/deliveries/:id/select", (ctx) => {
+router.get("/deliveries/:id/select", (ctx) => {
    const id = ctx.params["id"];
    const delivery = deliveries.find((obj) => obj.id === id);
    if (!delivery) {
@@ -51,7 +51,7 @@ router.get("{{API_BASE_URL}}/deliveries/:id/select", (ctx) => {
    };
 });
 
-router.get("{{API_BASE_URL}}/deliveries/:id/confirm-pickup", (ctx) => {
+router.get("/deliveries/:id/confirm-pickup", (ctx) => {
    const id = ctx.params["id"];
    const delivery = deliveries.find((obj) => obj.id === id);
    if (!delivery) {
@@ -68,7 +68,7 @@ router.get("{{API_BASE_URL}}/deliveries/:id/confirm-pickup", (ctx) => {
    };
 });
 
-router.get("{{API_BASE_URL}}/deliveries/:id/complete", (ctx) => {
+router.get("/deliveries/:id/complete", (ctx) => {
    const id = ctx.params["id"];
    const delivery = deliveries.find((obj) => obj.id === id);
    if (!delivery) {
